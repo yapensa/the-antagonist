@@ -4,6 +4,8 @@
 
 Value utama dari alat ini adalah membantu eksekutif dan pengambil keputusan menghindari *confirmation bias* dengan memaksa mereka berpikir lebih tajam dan mengantisipasi kegagalan sebelum terjadi.
 
+<img width="1024" height="1536" alt="Penjelasan" src="https://github.com/user-attachments/assets/4aed4536-f0f5-41ec-a304-066b60c4ea90" />
+
 <img width="250px" height="100%" alt="Screenshot 2026-05-03 114719" src="https://github.com/user-attachments/assets/6415b3e9-16b1-41fd-8780-a7838cbf0bef" />
 <img width="250px" height="100%" alt="Screenshot 2026-05-03 114755" src="https://github.com/user-attachments/assets/940bed7b-0368-4fa8-a472-5330bd51af42" />
 <img width="250px" height="100%" alt="Screenshot 2026-05-03 114900" src="https://github.com/user-attachments/assets/5dbe14d3-56f7-4480-809e-e9ea2932f49f" />
