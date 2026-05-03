@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>The Antagonist | Strategic Audit Tool</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header dengan Glassmorphism -->
+    <header class="glass-header">
+      <div class="brand">
+        <div class="logo-box">
+          <i data-lucide="shield-alert" class="icon-danger"></i>
+        </div>
+        <div class="brand-text">
+          <h1>THE ANTAGONIST</h1>
+          <div class="status-indicator">
+            <span class="pulse"></span>
+            <span class="badge-text">STRATEGIC AUDIT V2.5</span>
+          </div>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button id="reset-btn" class="action-btn" title="Reset Audit">
+          <i data-lucide="refresh-ccw"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Panel Kontrol Intensitas yang Lebih Responsif -->
+    <div class="control-panel">
+      <div class="panel-header">
+        <div class="label-group">
+          <i data-lucide="gauge" class="label-icon"></i>
+          <span>LEVEL SKEPTISISME</span>
+        </div>
+        <div class="intensity-display">
+          <span id="intensity-label">Sangat Kritis</span>
+          <span id="intensity-val" class="mono">7</span>
+        </div>
+      </div>
+      <div class="slider-container">
+        <input type="range" id="intensity" min="1" max="10" value="7">
+      </div>
+    </div>
+
+    <!-- Area Chat dengan Scroll Halus -->
+    <main id="chat-box" class="chat-area">
+      <div class="message system-init">
+        <div class="shield-icon">
+          <i data-lucide="target"></i>
+        </div>
+        <h3>Protokol Dimulai</h3>
+        <p>Saya tidak di sini untuk memuji rencana Anda. Berikan saya ide Anda, dan saya akan menunjukkan mengapa itu mungkin gagal.</p>
+      </div>
+    </main>
+
+    <!-- Preview Lampiran Sebelum Dikirim -->
+    <div id="file-preview-container" class="file-preview-bar hidden">
+      <div class="preview-scroll" id="preview-content"></div>
+      <button id="clear-files" class="close-preview" title="Hapus semua lampiran">
+        <i data-lucide="trash-2"></i>
+      </button>
+    </div>
+
+    <!-- Container Input yang Ditingkatkan -->
+    <section class="input-section">
+      <div class="input-outer">
+        <form id="chat-form">
+          <div class="input-actions-left">
+            <label for="file-upload" class="icon-btn-attach">
+              <i data-lucide="plus"></i>
+              <input type="file" id="file-upload" multiple hidden accept="image/*,application/pdf,audio/*,.doc,.docx,.txt">
+            </label>
+          </div>
+          
+          <textarea id="user-input" placeholder="Tantang saya dengan rencana Anda..." rows="1" required></textarea>
+          
+          <button type="submit" id="send-btn" class="send-trigger">
+            <i data-lucide="send-horizontal"></i>
+          </button>
+        </form>
+        <div class="input-tip">
+          Kirim strategi, gambar, atau dokumen untuk audit instan.
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>
