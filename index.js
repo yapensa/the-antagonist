@@ -12,7 +12,7 @@ const app = express();
 const apiKey = process.env.GEMINI_API_KEY;
 const genAI = new GoogleGenerativeAI(apiKey || "");
 
-// Menggunakan model 1.5 Flash untuk performa audit yang cepat namun tajam
+// Rekomendasi: Gunakan model Gemini 3.1 ke atas untuk performa audit yang cepat dan tajam
 const MODEL_NAME = 'gemini-2.5-flash'; 
 
 const SYSTEM_INSTRUCTION = `
